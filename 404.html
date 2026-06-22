@@ -6,32 +6,38 @@
     <title>Redirecting...</title>
     <script>
       // Single Page Apps for GitHub Pages
-      // MIT License
-      // https://github.com/rafgraph/spa-github-pages
-      (function(l) {
-        if (l.search[1] === '/' ) {
-          var decoded = l.search.slice(1).split('&').map(function(s) { 
-            return s.replace(/~and~/g, '&')
-          }).join('?');
-          window.history.replaceState(null, null,
-              l.pathname.slice(0, -1) + decoded + l.hash
-          );
-        }
-      }(window.location))
-    </script>
-    <script>
-      // Redirect to index.html with the current path as a query parameter
+      // Redirect any path to index.html while preserving the path in query string
+      // This allows React Router to handle the routing on the client side
       var path = window.location.pathname;
-      var repoName = '/website'; // Your repository name
-      var basePath = path.substring(0, path.indexOf(repoName) + repoName.length);
+      var search = window.location.search;
+      var hash = window.location.hash;
       
-      // If the path is exactly the base path or ends with a slash after base, it's the root
-      if (path === basePath || path === basePath + '/') {
-        window.location.href = basePath + '/';
-      } else {
-        // Redirect to index.html with the path as a query parameter
-        window.location.href = basePath + '/?' + path.substring(basePath.length + 1);
+      // Get the repository base path (e.g., /website)
+      var segments = path.split('/').filter(function(s) { return s.length > 0; });
+      var basePath = '';
+      if (segments.length > 0) {
+        basePath = '/' + segments[0];
       }
+      
+      // Build the redirect URL
+      var redirectUrl = basePath + '/index.html';
+      
+      // Preserve the original path after the base as a query parameter
+      var pathAfterBase = path.substring(basePath.length);
+      if (pathAfterBase && pathAfterBase !== '/') {
+        // Remove leading slash for query param
+        var queryPath = pathAfterBase.substring(1);
+        redirectUrl += '?/' + queryPath;
+      } else if (search) {
+        redirectUrl += search;
+      }
+      
+      // Preserve hash
+      if (hash) {
+        redirectUrl += hash;
+      }
+      
+      window.location.href = redirectUrl;
     </script>
   </head>
   <body>
