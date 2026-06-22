@@ -4,6 +4,8 @@ import Carousel from '../components/Carousel'
 import Footer from '../components/Footer'
 import steamIcon from '../assets/icons/icons8-steam-500.png'
 import itchIcon from '../assets/icons/icons8-itch-io-120.png'
+import betweenCircuitsLogo from '../assets/images/between_circuits-logo.png'
+import betweenCircuitsBg from '../assets/images/between_circuits-bg.png'
 
 function Home() {
   return (
@@ -15,9 +17,9 @@ function Home() {
           {/* Game 1 */}
           <GameSection
             title="Between Circuits"
-            logo="src/assets/images/between_circuits-logo.png"
+            logo={betweenCircuitsLogo}
             description="Navigate a decaying sector, repair aggressive corporate machinery, and out-smart the surveillance algorithm. As an android unit serving a dead regime, you must collect fragmented logs to discover why the 'Corporation' sounds exactly like you. Efficiency is mandatory. Curiosity is a malfunction."
-            backgroundImage="src/assets/images/between_circuits-bg.png"
+            backgroundImage={betweenCircuitsBg}
             platforms={[
               {
                 name: 'Steam',
