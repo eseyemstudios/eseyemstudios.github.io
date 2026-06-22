@@ -12,21 +12,14 @@
       var search = window.location.search;
       var hash = window.location.hash;
       
-      // Get the repository base path (e.g., /website)
-      var segments = path.split('/').filter(function(s) { return s.length > 0; });
-      var basePath = '';
-      if (segments.length > 0) {
-        basePath = '/' + segments[0];
-      }
-      
+      // For root-level GitHub Pages (user/organization site), no base path
       // Build the redirect URL
-      var redirectUrl = basePath + '/index.html';
+      var redirectUrl = '/index.html';
       
-      // Preserve the original path after the base as a query parameter
-      var pathAfterBase = path.substring(basePath.length);
-      if (pathAfterBase && pathAfterBase !== '/') {
+      // Preserve the original path as a query parameter for React Router
+      if (path && path !== '/') {
         // Remove leading slash for query param
-        var queryPath = pathAfterBase.substring(1);
+        var queryPath = path.substring(1);
         redirectUrl += '?/' + queryPath;
       } else if (search) {
         redirectUrl += search;
