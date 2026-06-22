@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <script>
+      // Single Page Apps for GitHub Pages
+      // MIT License
+      // https://github.com/rafgraph/spa-github-pages
+      (function(l) {
+        if (l.search[1] === '/' ) {
+          var decoded = l.search.slice(1).split('&').map(function(s) { 
+            return s.replace(/~and~/g, '&')
+          }).join('?');
+          window.history.replaceState(null, null,
+              l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      }(window.location))
+    </script>
+    <script>
+      // Redirect to index.html with the current path as a query parameter
+      var path = window.location.pathname;
+      var repoName = '/website'; // Your repository name
+      var basePath = path.substring(0, path.indexOf(repoName) + repoName.length);
+      
+      // If the path is exactly the base path or ends with a slash after base, it's the root
+      if (path === basePath || path === basePath + '/') {
+        window.location.href = basePath + '/';
+      } else {
+        // Redirect to index.html with the path as a query parameter
+        window.location.href = basePath + '/?' + path.substring(basePath.length + 1);
+      }
+    </script>
+  </head>
+  <body>
+    Redirecting...
+  </body>
+</html>
