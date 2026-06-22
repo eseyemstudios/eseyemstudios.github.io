@@ -1,17 +1,13 @@
 import logoHeader from '../assets/logo-header.png'
-// Social media icons - uncomment when ready to enable
-// import instagramIcon from '../assets/icons/instagram.png'
-// import youtubeIcon from '../assets/icons/youtube.png'
-// import twitterIcon from '../assets/icons/twitter.png'
+
+import youtubeIcon from '../assets/icons/icons8-youtube-150.png'
 import './Header.css'
 
 function Header() {
   // Social media links - hidden for now, uncomment to enable
-  // const socialLinks = [
-  //   { name: 'Instagram', url: '#', icon: instagramIcon },
-  //   { name: 'YouTube', url: '#', icon: youtubeIcon },
-  //   { name: 'Twitter', url: '#', icon: twitterIcon },
-  // ]
+  const socialLinks = [
+    { name: 'YouTube', url: 'https://www.youtube.com/@eseyemcom', icon: youtubeIcon },
+  ]
 
   return (
     <header className="header">
@@ -22,8 +18,7 @@ function Header() {
           </a>
         </div>
         <nav className="platform-nav">
-          {/* Social media icons - hidden for now */}
-          {/* {socialLinks.map((social) => (
+          {socialLinks.map((social) => (
             <a
               key={social.name}
               href={social.url}
@@ -34,7 +29,7 @@ function Header() {
             >
               <img src={social.icon} alt={social.name} className="platform-icon" />
             </a>
-          ))} */}
+          ))}
         </nav>
       </div>
     </header>
