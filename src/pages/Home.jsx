@@ -55,7 +55,7 @@ const gameJamGames = [
     title: 'Blindspot',
     thumbnail: blindspotGameplay,
     jamName: 'Game On! Game Jam Manila 2025',
-    description: 'Every move is seen. Every choice is yours. Will you do it?',
+    description: 'Blindspot is a 2d side-scrolling platformer set in a dystopian society. You are a nameless citizen, trapped in a system where every breath is monitored. In this world, obedience isn\'t a choice-it\'s survival. Every day repeats. Every step is under watch. Your fate remains unwritten. For now.',
     itchUrl: 'https://eseyem.itch.io/blindspot'
   },
   {
@@ -122,6 +122,21 @@ function Home() {
               {
                 name: 'itch.io',
                 url: 'https://eseyem.itch.io/still-here',
+                variant: 'itch',
+                icon: itchIcon,
+                buttonText: "Play on itch.io"
+              }
+            ]}
+          />
+          <GameSection
+            title="Blindspot"
+            logo={blindspotLogo}
+            description="After dying peacefully, the loyal golden retriever Jasper returns as a spirit to guide his elderly, blind owner, Sam, who has wandered into the streets during a severe dementia episode. As Sam’s fracturing memories distort the world around them, Jasper accompanies his lifelong friend on one final, reality-bending walk to the park."
+            backgroundImage={blindspotBg}
+            platforms={[
+              {
+                name: 'itch.io',
+                url: 'https://eseyem.itch.io/blindspot',
                 variant: 'itch',
                 icon: itchIcon,
                 buttonText: "Play on itch.io"
