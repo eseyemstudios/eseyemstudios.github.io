@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "homepage": "https://eseyemstudios.github.io/website",
+  "homepage": "https://eseyemstudios.github.io/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

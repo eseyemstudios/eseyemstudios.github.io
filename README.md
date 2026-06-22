@@ -29,8 +29,8 @@ A minimalist portfolio website for Eseyem Studios, a game development studio. Bu
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/eseyemstudios/website.git
-cd website
+git clone https://github.com/eseyemstudios/eseyemstudios.github.io.git
+cd eseyemstudios.github.io
 ```
 
 2. Install dependencies:

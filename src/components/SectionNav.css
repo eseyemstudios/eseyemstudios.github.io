@@ -1,8 +1,9 @@
 .section-nav {
-  padding: 2rem 0;
-  background: var(--bg-primary);
-  position: relative;
-  z-index: 10;
+  padding: 1rem 0;
+  padding-top: 4rem; /* To account for the fixed header */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .section-nav__container {
@@ -46,13 +47,53 @@
 }
 
 /* Responsive */
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .section-nav {
-    padding: 1.5rem 0;
+    /* Stick below the fixed header on mobile */
+    top: 60px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .section-nav__container {
+    max-width: 320px;
   }
 
   .section-nav__tab {
-    padding: 0.625rem 1rem;
+    padding: 0.875rem 1rem;
     font-size: 0.8rem;
+    min-height: 44px; /* Touch-friendly target size */
+  }
+}
+
+@media (max-width: 576px) {
+  .section-nav {
+    top: 55px; /* Slightly less since header is smaller */
+    padding: 0.5rem 0;
+  }
+
+  .section-nav__container {
+    max-width: 280px;
+  }
+
+  .section-nav__tab {
+    padding: 0.75rem 0.75rem;
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-nav {
+    top: 50px; /* Even less for smallest screens */
+  }
+
+  .section-nav__container {
+    max-width: 260px;
+    padding: 0.2rem;
+  }
+
+  .section-nav__tab {
+    padding: 0.625rem 0.625rem;
+    font-size: 0.7rem;
   }
 }
