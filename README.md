@@ -77,6 +77,8 @@ eseyem-website/
 │   ├── assets/
 │   │   ├── favicon.png
 │   │   ├── logo-header.png
+│   │   ├── icons/
+│   │   │   └── icons8-steam-500.png
 │   │   └── images/
 │   ├── components/
 │   │   ├── Button.jsx

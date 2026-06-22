@@ -128,10 +128,7 @@ function PrivacyPolicy() {
             <section className="privacy-section">
               <h2>10. Contact Us</h2>
               <p>
-                If you have any questions about this Privacy Policy, please contact us at:
-              </p>
-              <p className="contact-info">
-                Email: privacy@eseyem.com
+                If you have any questions about this Privacy Policy, please contact us <a href="mailto:privacy@eseyem.com" className="contact-info"> here.</a>
               </p>
             </section>
           </div>

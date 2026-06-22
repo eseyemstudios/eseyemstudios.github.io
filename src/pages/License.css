@@ -1,0 +1,128 @@
+.license-page {
+  min-height: 100vh;
+}
+
+.license-main {
+  padding-top: 10rem;
+  padding-bottom: 4rem;
+}
+
+.license-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.license-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5rem;
+}
+
+.license-date {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  opacity: 0.6;
+  margin-bottom: 3rem;
+}
+
+.license-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.license-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.license-section h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: var(--text-primary);
+}
+
+.license-section p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 300;
+  line-height: 1.8;
+  opacity: 0.85;
+}
+
+.license-section a {
+  color: var(--text-primary);
+  text-decoration: underline;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.license-section a:hover {
+  opacity: 1;
+}
+
+.license-section ul {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.license-section li {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 300;
+  line-height: 1.8;
+  opacity: 0.85;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.license-section li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--text-primary);
+  opacity: 0.6;
+}
+
+.license-back {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(250, 250, 250, 0.1);
+}
+
+.back-link {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.back-link:hover {
+  opacity: 1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .license-main {
+    padding-top: 8rem;
+  }
+
+  .license-title {
+    font-size: 2rem;
+  }
+
+  .license-container {
+    padding: 0 1.5rem;
+  }
+}

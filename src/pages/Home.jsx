@@ -1,35 +1,41 @@
 import Header from '../components/Header'
 import GameSection from '../components/GameSection'
+import Carousel from '../components/Carousel'
 import Footer from '../components/Footer'
+import steamIcon from '../assets/icons/icons8-steam-500.png'
+import itchIcon from '../assets/icons/icons8-itch-io-120.png'
 
 function Home() {
-  // Placeholder image - replace with actual game screenshots
-  const placeholderBg = 'https://images.unsplash.com/photo-1511512578047-dfb367046420?w=1920&q=80'
-
   return (
     <div className="home">
       <Header />
       
       <main>
-        {/* First Game Section */}
-        <GameSection
-          title="Project Alpha"
-          description="An immersive gaming experience that pushes the boundaries of interactive storytelling. Dive into a world where every choice matters and every decision shapes your destiny."
-          backgroundImage={placeholderBg}
-          steamUrl="https://store.steampowered.com/app/yourgame"
-          itchUrl="https://eseyem.itch.io/yourgame"
-        />
-
-        {/* Add more game sections as needed */}
-        {/* 
-        <GameSection
-          title="Project Beta"
-          description="Another amazing game description here..."
-          backgroundImage="path/to/image.jpg"
-          steamUrl="https://store.steampowered.com/app/yourgame2"
-          itchUrl="https://eseyem.itch.io/yourgame2"
-        />
-        */}
+        <Carousel>
+          {/* Game 1 */}
+          <GameSection
+            title="Between Circuits"
+            logo="src/assets/images/between_circuits-logo.png"
+            description="Navigate a decaying sector, repair aggressive corporate machinery, and out-smart the surveillance algorithm. As an android unit serving a dead regime, you must collect fragmented logs to discover why the 'Corporation' sounds exactly like you. Efficiency is mandatory. Curiosity is a malfunction."
+            backgroundImage="src/assets/images/between_circuits-bg.png"
+            platforms={[
+              {
+                name: 'Steam',
+                url: 'https://store.steampowered.com/app/4183820/Between_Circuits/',
+                variant: 'steam',
+                icon: steamIcon,
+                buttonText: 'Wishlist on Steam'
+              },
+              {
+                name: 'itch.io',
+                url: 'https://eseyem.itch.io/between-circuits-se',
+                variant: 'itch',
+                icon: itchIcon,
+                buttonText: "Supporter's Edition"
+              }
+            ]}
+          />
+        </Carousel>
       </main>
 
       <Footer />

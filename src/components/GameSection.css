@@ -1,5 +1,6 @@
 .game-section {
   position: relative;
+  width: 100%;
   min-height: 100vh;
   display: flex;
   align-items: flex-end;
@@ -51,6 +52,16 @@
   max-width: 500px;
 }
 
+.game-logo {
+  max-width: 500px;
+  max-height: 150px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
 .game-title {
   font-family: 'Montserrat', sans-serif;
   font-size: 3.5rem;
@@ -62,25 +73,48 @@
 
 .game-description {
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.125rem;
+  font-size: 0.95rem;
   font-weight: 300;
   line-height: 1.8;
   opacity: 0.9;
-  max-width: 450px;
+  max-width: 550px;
 }
 
 .game-actions {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  align-items: flex-start;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+/* Ensure all buttons have consistent sizing - same width for all */
+.game-actions .btn {
+  width: 280px;
+  min-width: 280px;
 }
 
 /* Responsive */
 @media (max-width: 968px) {
+  .game-section {
+    padding: 8rem 1.5rem 3rem;
+  }
+
   .game-section-content {
     grid-template-columns: 1fr;
     gap: 2rem;
+  }
+
+  .game-info {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .game-logo {
+    max-width: 350px;
+    max-height: 100px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .game-title {
@@ -88,30 +122,50 @@
   }
 
   .game-description {
-    font-size: 1rem;
+    font-size: 0.9rem;
+    max-width: 100%;
   }
 
   .game-actions {
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .game-actions .btn {
+    width: 280px;
+    min-width: 280px;
   }
 }
 
 @media (max-width: 576px) {
   .game-section {
-    padding: 8rem 1.5rem 3rem;
+    padding: 7rem 1rem 2.5rem;
+  }
+
+  .game-logo {
+    max-width: 280px;
+    max-height: 90px;
   }
 
   .game-title {
     font-size: 2rem;
   }
 
+  .game-description {
+    font-size: 0.85rem;
+  }
+
   .game-actions {
     flex-direction: column;
     width: 100%;
+    align-items: stretch;
   }
 
   .game-actions .btn {
     width: 100%;
+    min-width: unset;
   }
 }
