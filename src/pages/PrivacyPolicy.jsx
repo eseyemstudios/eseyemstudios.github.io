@@ -17,7 +17,7 @@ function PrivacyPolicy() {
             <section className="privacy-section">
               <h2>1. Introduction</h2>
               <p>
-                Welcome to Eseyem Studios. We are committed to protecting your personal information 
+                Welcome to <strong>eseyem</strong>. We are committed to protecting your personal information 
                 and your right to privacy. This Privacy Policy explains how we collect, use, disclose, 
                 and safeguard your information when you visit our website or use our services.
               </p>

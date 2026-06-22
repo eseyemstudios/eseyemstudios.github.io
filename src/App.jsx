@@ -6,7 +6,7 @@ import License from './pages/License'
 
 function App() {
   return (
-    <Router basename="/website/">
+    <Router>
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
