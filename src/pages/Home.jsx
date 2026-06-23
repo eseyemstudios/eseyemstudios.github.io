@@ -132,7 +132,7 @@ function Home() {
           <GameSection
             title="Blindspot"
             logo={blindspotLogo}
-            description="Blindspot is a 2d side-scrolling platformer set in a dystopian society. You are a nameless citizen, trapped in a system where every breath is monitored. In this world, obedience isn\'t a choice-it\'s survival. Every day repeats. Every step is under watch. Your fate remains unwritten. For now."
+            description="Blindspot is a 2d side-scrolling platformer set in a dystopian society. You are a nameless citizen, trapped in a system where every breath is monitored. In this world, obedience isn't a choice-it's survival. Every day repeats. Every step is under watch. Your fate remains unwritten. For now."
             backgroundImage={blindspotGameplay}
             platforms={[
               {
