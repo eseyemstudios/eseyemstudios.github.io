@@ -6,7 +6,7 @@ import './Header.css'
 function Header() {
   // Social media links - hidden for now, uncomment to enable
   const socialLinks = [
-    { name: 'YouTube', url: 'https://www.youtube.com/@eseyemcom', icon: youtubeIcon },
+    { name: 'YouTube', url: 'https://www.youtube.com/@eseyem_studios', icon: youtubeIcon },
   ]
 
   return (
