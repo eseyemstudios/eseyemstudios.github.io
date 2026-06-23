@@ -36,7 +36,7 @@ const releases = [
     title: 'Between Circuits',
     logo: betweenCircuitsLogo,
     image: betweenCircuitsBg,
-    description: 'Navigate a decaying sector, repair aggressive corporate machinery, and out-smart the surveillance algorithm. As an android unit serving a dead regime, you must collect fragmented logs to discover why the \'Corporation\' sounds exactly like you. Efficiency is mandatory. Curiosity is a malfunction.',
+    description: 'A city is dying. The streets are empty. The machines still run. You are the last maintenance worker, assigned to keep the lights on in a place that has no reason left to stay lit. Something is wrong with this city. Something is wrong with you. Efficiency is mandatory. Curiosity is a malfunction.',
     steamUrl: 'https://store.steampowered.com/app/4183820/Between_Circuits/',
     itchUrl: 'https://eseyem.itch.io/between-circuits-se',
     itchText: "Supporter's Edition"
