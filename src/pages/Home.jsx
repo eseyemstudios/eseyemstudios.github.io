@@ -40,7 +40,7 @@ const releases = [
     steamUrl: 'https://store.steampowered.com/app/4183820/Between_Circuits/',
     itchUrl: 'https://eseyem.itch.io/between-circuits-se',
     itchText: "Supporter's Edition"
-  }
+  },
 ]
 
 // Game Jam Games Data

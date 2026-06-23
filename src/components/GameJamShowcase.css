@@ -7,7 +7,7 @@
 
 .game-jam-showcase__header {
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   padding: 0 2rem;
 }
 
@@ -29,27 +29,37 @@
   opacity: 0.5;
 }
 
-.game-jam-showcase__marquee-container {
-  width: 100%;
+.game-jam-showcase__scroll-container {
   overflow: hidden;
   padding: 1rem 0;
-}
-
-.game-jam-showcase__marquee {
+  -webkit-user-select: none;
+  user-select: none;
   display: flex;
-  width: fit-content;
-  animation: marquee 40s linear infinite;
 }
 
-.game-jam-showcase__marquee:hover {
-  animation-play-state: paused;
+/* Single item - center it */
+.game-jam-showcase__scroll-container.single-item {
+  overflow: hidden;
+  justify-content: center;
+}
+
+.game-jam-showcase__scroll-container.single-item .game-jam-showcase__track {
+  justify-content: center;
+  animation: none !important;
+  padding: 0;
 }
 
 .game-jam-showcase__track {
   display: flex;
   gap: 1.5rem;
-  padding: 0 1.5rem;
-  flex-shrink: 0;
+  padding: 0 2rem;
+  width: max-content;
+  animation: marquee 30s linear infinite;
+}
+
+/* Pause on hover */
+.game-jam-showcase__scroll-container.hovering .game-jam-showcase__track {
+  animation-play-state: paused;
 }
 
 @keyframes marquee {
@@ -68,7 +78,7 @@
   }
 
   .game-jam-showcase__header {
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
   }
 
   .game-jam-showcase__title {
@@ -84,9 +94,5 @@
 @media (max-width: 576px) {
   .game-jam-showcase__title {
     font-size: 1.25rem;
-  }
-
-  .game-jam-showcase__marquee {
-    animation-duration: 30s;
   }
 }
