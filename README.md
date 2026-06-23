@@ -72,28 +72,59 @@ This command builds the project and deploys it to the `gh-pages` branch.
 ```
 eseyemstudios.github.io/
 ├── public/
+│   ├── 404.html
+│   ├── CNAME
 │   └── favicon.png
 ├── src/
 │   ├── assets/
 │   │   ├── favicon.png
 │   │   ├── logo-header.png
 │   │   ├── icons/
-│   │   │   └── icons8-steam-500.png
+│   │   │   ├── icons8-itch-io-120.png
+│   │   │   ├── icons8-steam-500.png
+│   │   │   └── icons8-youtube-150.png
 │   │   └── images/
+│   │       ├── between_circuits-bg.png
+│   │       ├── between_circuits-logo.png
+│   │       ├── blindspot-gameplay.png
+│   │       ├── blindspot-logo.png
+│   │       ├── blindspot.png
+│   │       ├── centrix-gameplay.png
+│   │       ├── centrix.png
+│   │       ├── liwanag-gameplay.png
+│   │       ├── liwanag.png
+│   │       ├── starlit-veil-gameplay.png
+│   │       ├── starlit-veil.png
+│   │       ├── stillhere-gameplay.png
+│   │       ├── stillhere-logo.png
+│   │       └── stillhere.png
 │   ├── components/
 │   │   ├── Button.jsx
 │   │   ├── Button.css
+│   │   ├── Carousel.jsx
+│   │   ├── Carousel.css
 │   │   ├── Footer.jsx
 │   │   ├── Footer.css
+│   │   ├── GameJamCard.jsx
+│   │   ├── GameJamCard.css
+│   │   ├── GameJamShowcase.jsx
+│   │   ├── GameJamShowcase.css
 │   │   ├── GameSection.jsx
 │   │   ├── GameSection.css
 │   │   ├── Header.jsx
-│   │   └── Header.css
+│   │   ├── Header.css
+│   │   ├── ReleaseCard.jsx
+│   │   ├── ReleaseCard.css
+│   │   ├── ReleaseShowcase.jsx
+│   │   ├── ReleaseShowcase.css
+│   │   ├── ScrollToTop.jsx
+│   │   ├── SectionNav.jsx
+│   │   └── SectionNav.css
 │   ├── pages/
 │   │   ├── Home.jsx
 │   │   ├── License.jsx
-│   │   ├── PrivacyPolicy.jsx
 │   │   ├── License.css
+│   │   ├── PrivacyPolicy.jsx
 │   │   └── PrivacyPolicy.css
 │   ├── styles/
 │   │   └── globals.css
@@ -156,4 +187,4 @@ export const fetchLeaderboard = async (appId, leaderboardId) => {
 
 ## License
 
-© 2026 Eseyem Studios. All rights reserved.
+© 2026 eseyem. All rights reserved.
