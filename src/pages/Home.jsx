@@ -146,18 +146,18 @@ function Home() {
           />
         </Carousel>
 
-        <SectionNav 
-          activeSection={activeSection} 
-          onSectionChange={setActiveSection} 
-        />
-
-        {activeSection === 'releases' ? (
-          <ReleaseShowcase releases={releases} />
-        ) : (
-          <GameJamShowcase games={gameJamGames} />
-        )}
+        <div className="showcase-section">
+          <SectionNav 
+            activeSection={activeSection} 
+            onSectionChange={setActiveSection} 
+          />
+          {activeSection === 'releases' ? (
+            <ReleaseShowcase releases={releases} />
+          ) : (
+            <GameJamShowcase games={gameJamGames} />
+          )}
+        </div>
       </main>
-
       <Footer />
     </div>
   )

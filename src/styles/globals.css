@@ -68,3 +68,10 @@ img {
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+
+/* Showcase Section - Contains SectionNav and Showcase */
+.showcase-section {
+  /* This wrapper limits the sticky behavior of SectionNav.
+     When the bottom of this container is reached, the sticky
+     SectionNav will stop sticking and scroll away normally. */
+}
