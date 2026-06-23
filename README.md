@@ -70,7 +70,7 @@ This command builds the project and deploys it to the `gh-pages` branch.
 ## Project Structure
 
 ```
-eseyem-website/
+eseyemstudios.github.io/
 ├── public/
 │   └── favicon.png
 ├── src/
@@ -91,7 +91,9 @@ eseyem-website/
 │   │   └── Header.css
 │   ├── pages/
 │   │   ├── Home.jsx
-│   │   └── PrivacyPolicy.jsx
+│   │   ├── License.jsx
+│   │   ├── PrivacyPolicy.jsx
+│   │   ├── License.css
 │   │   └── PrivacyPolicy.css
 │   ├── styles/
 │   │   └── globals.css

@@ -97,7 +97,19 @@
 /* Responsive */
 @media (max-width: 968px) {
   .game-section {
+    align-items: flex-start; /* Move content to top on mobile */
     padding: 8rem 1.5rem 3rem;
+  }
+
+  .game-section-overlay {
+    /* Reverse gradient: dark at top, transparent at bottom for mobile */
+    background: linear-gradient(
+      to bottom,
+      #050505 0%,
+      rgba(5, 5, 5, 0.85) 20%,
+      rgba(5, 5, 5, 0.4) 50%,
+      transparent 100%
+    );
   }
 
   .game-section-content {
