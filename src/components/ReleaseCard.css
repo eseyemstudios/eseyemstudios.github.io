@@ -106,6 +106,7 @@
 /* Responsive */
 @media (max-width: 968px) {
   .release-card {
+    min-width: 80vw;
     min-height: 0;
   }
 
@@ -145,6 +146,8 @@
 
 @media (max-width: 576px) {
   .release-card {
+    min-width: 85vw;
+    max-width: 95vw;
     border-radius: 8px;
   }
 
